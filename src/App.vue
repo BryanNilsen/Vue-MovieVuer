@@ -10,6 +10,7 @@
           </v-col>
           <v-col :sm="12" :md="6">
             <!-- Todo: REVIEWS GO HERE -->
+            <movie-reviews />
           </v-col>
         </v-row>
       </v-container>
@@ -21,12 +22,14 @@
 import AppHeader from "./components/AppHeader.vue";
 import MovieDetails from "./components/MovieDetails.vue";
 import SearchResults from "./components/SearchResults";
+import MovieReviews from "./components/MovieReviews.vue";
 
 export default {
   components: {
     SearchResults,
     AppHeader,
-    MovieDetails
+    MovieDetails,
+    MovieReviews
   }
 };
 </script>
